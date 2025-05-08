@@ -51,6 +51,9 @@ $ip = ip_in_ranges($_SERVER['REMOTE_ADDR'], $rango);
             maxlength="10" placeholder="Ingrese su contraseña" required>
           <small id="text_passHelp" class="form-text text-muted">Digite su Contraseña (Obligatorio)</small>
         </div>
+        <button type="submit" class="btn btn-primary mx-auto d-block" id="btn_ingresar">
+          Iniciar Sesión
+        </button>
       </form>
 
     </div>
