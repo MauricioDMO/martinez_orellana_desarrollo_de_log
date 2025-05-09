@@ -26,30 +26,29 @@ $ip = ip_in_ranges($_SERVER['REMOTE_ADDR'], $rango);
 
 <body>
   <div class="alert alert-warning" role="alert">
-    <b>
-
-    </b>
+    <b></b>
   </div>
 
   <div class="form-row">
     <div class="form-group col-md-5 text-center">
-      <img src="media/logo/logo_corporativo.png" alt="" id="img" class="mx-auto d-block" width="65%" height="auto">
+      <img src="media/logo/logo_corporativo.png" alt="Logo-UFG" id="img" class="mx-auto d-block" width="65%"
+        height="auto">
     </div>
-    <div class="form-group col-md-5 text-center ml-4 mr-4 justify-content align-self-center">
-      <h1>Diseñando Estrategias para la Recuperación y Mitigación de Bases de Datos</h1>
+    <div class="form-group col-md-5 ml-4 mr-4 justify-content-center align-self-center">
+      <h1>Diseñando Estrategias para la Recuperación y Migración de Base de Datos</h1>
       <form name="frm_iniciar_sesion" id="frm_iniciar_sesion" action="core/process.php" method="post">
         <div class="form-group">
-          <label for="txt_pass">Usuario:</label>
-          <input type="text" class="form-control" id="txt_user" name="txt_user" aria-describedby="text_userHelp"
-            maxlength="10" placeholder="Ingrese su contraseña" required>
-          <small id="text_userHelp" class="form-text text-muted">Digite su Usuario (Obligatorio)</small>
+          <label for="txt_user">Usuario:</label>
+          <input type="text" class="form-control" id="txt_user" name="txt_user" aria-describedby="txt_userHelp"
+            maxlength="10" placeholder="Ingrese su usuario" required>
+          <small id="txt_userHelp" class="form-text text-muted">Digite su Usuario (Obligatorio)</small>
         </div>
 
         <div class="form-group">
           <label for="txt_pass">Contraseña:</label>
-          <input type="password" class="form-control" id="txt_pass" name="txt_pass" aria-describedby="text_passHelp"
+          <input type="password" class="form-control" id="txt_pass" name="txt_pass" aria-describedby="txt_passHelp"
             maxlength="10" placeholder="Ingrese su contraseña" required>
-          <small id="text_passHelp" class="form-text text-muted">Digite su Contraseña (Obligatorio)</small>
+          <small id="txt_passHelp" class="form-text text-muted">Digite su Contraseña (Obligatorio)</small>
         </div>
         <button type="submit" class="btn btn-primary mx-auto d-block" id="btn_ingresar">
           Iniciar Sesión
